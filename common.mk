@@ -44,7 +44,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
-    audio.primary.kalama \
+    audio.primary.crow \
     audio.r_submix.default \
     audio.usb.default \
     audioadsprpcd \
@@ -59,15 +59,15 @@ PRODUCT_PACKAGES += \
     libsndcardparser \
     libtinycompress \
     libvolumelistener \
-    sound_trigger.primary.kalama
+    sound_trigger.primary.crow
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8550/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(AUDIO_HAL_DIR)/configs/kalama/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.conf \
-    $(AUDIO_HAL_DIR)/configs/kalama/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.xml \
-    $(AUDIO_HAL_DIR)/configs/kalama/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
+    $(AUDIO_HAL_DIR)/configs/crow/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_crow/audio_effects.conf \
+    $(AUDIO_HAL_DIR)/configs/crow/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_crow/audio_effects.xml \
+    $(AUDIO_HAL_DIR)/configs/crow/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
@@ -342,7 +342,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.3.vendor
 
 PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/power/config/kalama/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+    vendor/qcom/opensource/power/config/crow/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Protobuf
 PRODUCT_PACKAGES += \

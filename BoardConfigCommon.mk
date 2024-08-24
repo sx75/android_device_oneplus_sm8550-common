@@ -64,7 +64,7 @@ BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := kalama
+TARGET_BOOTLOADER_BOARD_NAME := crow
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
@@ -124,7 +124,6 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/sm8550
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/kalama_GKI.config \
-    vendor/oplus/kalama_GKI.config \
     vendor/debugfs.config
 
 # Kernel modules
@@ -169,7 +168,7 @@ TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := kalama
+TARGET_BOARD_PLATFORM := crow
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
