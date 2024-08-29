@@ -160,6 +160,7 @@ qcom_glink.ko
 qcom_glink_smem.ko
 qcom_glink_spss.ko
 qcom_smd.ko
+qca_cld3_qca6750.ko
 gh_irq_lend.ko
 gh_mem_notifier.ko
 qcom-spmi-adc5-gen3.ko
